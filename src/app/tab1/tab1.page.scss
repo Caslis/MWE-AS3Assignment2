@@ -1,5 +1,8 @@
-.backbtn{
+#backbtnN{
     font-size:48px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .notificationTxt {
@@ -10,3 +13,32 @@
     left: 0;
     right: 0;
 }
+
+#envelopeIcon{
+    font-size: 300px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #DEC236;
+}    
+
+.time {
+    color: black;
+}
+
+.custom-row ion-col {
+    margin-right: 50px;
+  }
+  
+  .custom-row ion-col:last-child {
+    margin-right: -20px;
+  }
+
+  .custom-row ion-col:first-child {
+    margin-left: 10px;
+  }
+
+  
