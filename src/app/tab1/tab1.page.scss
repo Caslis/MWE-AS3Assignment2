@@ -1,4 +1,4 @@
-#backbtnN{
+#backbtn{
     color: #AF1B34;
     font-size:48px;
     position: absolute;
@@ -29,6 +29,11 @@
 
 .time {
     color: black;
+    font-size: 18px;
+}
+
+.quote {
+  font-size: 16px;
 }
 
 .custom-row ion-col {
@@ -46,8 +51,8 @@
   .custom-row::after {
     content: "-----------------------------------------------------------------------";
     display: block;
-    border-top: 3px solid #000; /* Change the color and thickness as needed */
-    margin: 5px 0; /* Adjust the spacing between the lines */
+    border-top: 3px solid #000;
+    margin: 5px 0;
   }
 
   #hLine::before {
@@ -56,5 +61,21 @@
     border-top: 3px solid #000;
     margin: 5px 0;
   }
+
+  .container {
+    position: relative;
+  }
   
+  #clearBtn {
+    --ion-color-primary: #F10234;
+    color: #000;
+    width: 150px;
+    font-size: 20px;
+    margin: 0 auto; /* Center the button */
+    display: block; /* Ensure it takes up full width */
+    position: absolute; /* Position relative to its container */
+    bottom: 30px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal centering */
+  }
   
