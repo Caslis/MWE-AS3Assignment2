@@ -1,0 +1,58 @@
+ion-menu::part(backdrop) {
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 0px 16px rgba(245, 52, 52, 0.18);
+}
+
+#fittrackerTxt {
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+}
+
+#menuBtn {
+    color: #AF1B34;
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#closeBtn {
+    color: #AF1B34;
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#aboutTxt {
+    color: #FFFFFF;
+    font-size: 48px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+#aboutTxts {
+    font-size: 18px;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+}
+
+#space {
+    height: 20px;
+}
