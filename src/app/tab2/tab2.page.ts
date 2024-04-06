@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonMenu } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -7,11 +8,16 @@ import { IonMenu } from '@ionic/angular';
   styleUrls: ['tab2.page.scss'],
 })
 export class Tab2Page {
-  constructor() {}
+  constructor(private router: Router) {}
 
   // Method to close the menu
   closeMenu() {
     const menu = document.querySelector('ion-menu') as HTMLIonMenuElement;
     menu.close(); // Close the menu
+  }
+
+  // Method to handle navigation to Tab3
+  goToTab3() {
+    this.router.navigateByUrl('/tabs/tab3');
   }
 }
