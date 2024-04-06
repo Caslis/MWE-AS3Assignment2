@@ -90,3 +90,48 @@ ion-menu::part(container) {
     padding-left: 20px;
     padding-bottom: 15px;
 }
+
+.train-info {
+    font-size: 40px;
+    padding-left: 35px;
+    position: absolute;
+    top: 60%;
+    color: #000;
+}
+
+.train-info ion-icon {
+    margin-left: 170px; /* Adjust as needed */
+}
+
+#grid {
+    position: absolute;
+    top: 70%;
+}
+    
+.checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #000;
+  }
+
+#upperBody {
+    font-size: 24px;
+    color: #000;
+}
+
+.body {
+    padding-right: 80px;
+}
+
+.box {
+    margin-left: 150px;
+}
+
+.customRow::after {
+    content: "-----------------------------------------------";
+    display: block;
+    margin: 5px 0;
+}
+
+.container {
+    position: relative;
+}
