@@ -13,11 +13,8 @@ const routes: Routes = [
   { path: 'tab2', component: Tab2Page },
   {
     path: 'tipspage',
-    loadChildren: () => import('./tipspage/tipspage.module').then( m => m.TipspagePageModule)
-  },
-  {
-    path: 'homepage',
-    loadChildren: () => import('./homepage/homepage.module').then( m => m.HomepagePageModule)
+    loadChildren: () =>
+      import('./tipspage/tipspage.module').then((m) => m.TipspagePageModule),
   },
 ];
 @NgModule({
