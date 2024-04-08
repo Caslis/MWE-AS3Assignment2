@@ -1,4 +1,4 @@
-<ion-tab-button tab="tab2">
+  <ion-tab-button tab="tab2">
   <ion-icon id="backBtn" name="chevron-back-circle"></ion-icon>
 </ion-tab-button>
 
@@ -9,18 +9,18 @@
 <ion-icon id="envelopeIcon" name="mail"></ion-icon>
 
 <ion-grid class="container">
-  <ion-row id="hLine" class="custom-row">
+  <ion-row id="hLine" class="custom-row" *ngIf="showQuotes"> 
     <ion-col class="time" size="auto"><b>6:00 <br> AM</b></ion-col>
     <ion-col class="quote">Get ready to crush your goals! <br> Your workout awaits. Let's hustle!</ion-col>
   </ion-row>
-  <ion-row class="custom-row">
+  <ion-row class="custom-row" *ngIf="showQuotes"> 
     <ion-col class="time" size="auto"><b>5:30 <br> PM</b></ion-col>
     <ion-col class="quote">Time to sweat it out! <br> Your body is craving that workout high. Let's do this!</ion-col>
   </ion-row>
-  <ion-row class="custom-row">
+    <ion-row class="custom-row" *ngIf="showQuotes">
     <ion-col class="time" size="auto"><b>9:00 <br> PM</b></ion-col>
-    <ion-col class="quote">Ready to feel unstoppable? <br> Your workout is calling. Let's go!</ion-col>
+    <ion-col class="quote" id="quote3">Ready to feel unstoppable? <br> Your workout is calling. Let's go!</ion-col>
   </ion-row>
 </ion-grid>
 
-<ion-button id="clearBtn"><b>CLEAR</b></ion-button>
+<ion-button id="clearBtn" (click)="clearQuotes()"><b>CLEAR</b></ion-button>

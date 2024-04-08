@@ -15,9 +15,4 @@ export class Tab2Page {
     const menu = document.querySelector('ion-menu') as HTMLIonMenuElement;
     menu.close(); // Close the menu
   }
-
-  // Method to handle navigation to Tab3
-  goToTab3() {
-    this.router.navigateByUrl('/tabs/tab3');
-  }
 }

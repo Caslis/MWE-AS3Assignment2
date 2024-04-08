@@ -1,0 +1,28 @@
+<ion-tab-button [routerLink]="['/tabs/tab2']">
+  <ion-icon id="backBtn" name="chevron-back-circle"></ion-icon>
+</ion-tab-button>
+
+<ion-text>
+  <h1 class="workouthisTxt"><b><i>Workout <br> History</i></b></h1>
+</ion-text>
+
+<div class="square" [routerLink]="['/tabs/tab2']">
+  <ion-icon id="calendar" name="calendar"></ion-icon>
+  <ion-icon id="closeIcon" name="close"></ion-icon>
+  <ion-text id="txt">
+  <div>February 2024</div>
+  <div id="day">(DAY 1)</div>
+  <div>You have not completed any workouts today!</div>
+</ion-text>
+ </div>
+
+ <ion-grid class="container">
+  <ion-row id="hLine" class="custom-row">
+    <ion-col class="time" size="auto"><b>Day 1</b></ion-col>
+    <ion-col class="quote">You have completed the workout!</ion-col>
+  </ion-row>
+  <ion-row class="custom-row">
+    <ion-col class="time" size="auto"><b>Day 2</b></ion-col>
+    <ion-col class="quote"></ion-col>
+  </ion-row>
+</ion-grid>
